@@ -85,6 +85,7 @@ a:active {
   color: #aa6666;
 }
 
+
 /* External link icon */
 a[href^="http"] {
   background: url("external-link-52.png") no-repeat 100% 0;
