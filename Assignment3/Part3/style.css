@@ -1,0 +1,90 @@
+/* General setup */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  color: #333333;
+  margin: 0;
+  font: 1.2em / 1.6 sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border: 1px solid black;
+}
+
+.logo {
+  font-size: 200%;
+  padding: 50px 20px;
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+.grid {
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+nav {
+  background-color: black;
+  padding: 0.5em;
+
+  /* Task 2: stick to top when scrolling */
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  /* Task 1: navigation items in a row with equal space */
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+}
+
+/* Task 3: feature image with text wrapping around it */
+.feature {
+  width: 200px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+/* Task 4: article and aside as two columns, article 3x wider */
+.grid {
+  display: flex;
+  gap: 20px;
+}
+
+article {
+  flex: 3;
+}
+
+aside {
+  flex: 1;
+}
+
+/* Task 5: photos in a two-column grid */
+.photos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+.photos img {
+  width: 100%;
+}
