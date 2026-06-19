@@ -1,0 +1,134 @@
+/* General setup */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0 20px;
+  min-width: 980px;
+  max-width: 1400px;
+
+  /* Body font */
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+
+/* Layout */
+main {
+  display: grid;
+  grid-template-columns: 5fr 2fr 2fr;
+  gap: 40px;
+  padding: 20px 0;
+}
+
+/* Header and footer */
+header {
+  border-bottom: 5px solid #aa6666;
+}
+
+footer {
+  border-top: 5px solid #aa6666;
+}
+
+footer p {
+  text-align: center;
+}
+
+/* Headings font and sizing */
+h1, h2, h3 {
+  font-family: "Arial Black", "Arial Bold", Arial, sans-serif;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+/* First paragraph after heading indentation */
+section h2 + p,
+section h1 + p {
+  text-indent: 2rem;
+}
+
+/* Link styling */
+a:link {
+  color: #aa6666;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #883333;
+  text-decoration: underline;
+}
+
+a:focus {
+  color: #aa6666;
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover {
+  color: #aa6666;
+  text-decoration: none;
+}
+
+a:active {
+  color: #aa6666;
+}
+
+/* External link icon */
+a[href^="http"] {
+  background: url("external-link-52.png") no-repeat 100% 0;
+  background-size: 16px 16px;
+  padding-right: 20px;
+}
+
+/* List styling */
+ul, ol {
+  line-height: 1.6;
+  margin: 1em 0;
+}
+
+li {
+  margin: 0.5em 0;
+}
+
+/* Navigation styling */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Arial Black", "Arial Bold", Arial, sans-serif;
+  color: #aa6666;
+  background-color: #f4e0e0;
+  margin-bottom: 2px;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #aa6666;
+  color: white;
+  text-decoration: none;
+  outline: none;
+}
