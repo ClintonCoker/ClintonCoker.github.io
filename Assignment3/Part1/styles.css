@@ -1,0 +1,53 @@
+/* Starting CSS */
+html {
+  background-color: white;
+}
+
+body {
+  font: 1.2em / 1.5 system-ui;
+
+  /* Box styles - Task 1, 2, 3 */
+  padding: 20px;
+  width: 500px;
+  background-color: #efefef;
+  margin: 0 auto;
+}
+
+/* Box styles - Task 4 and 5 */
+ul {
+  background-color: white;
+  border: 5px solid purple;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+/* Text styles - Task 1 */
+h1 {
+  color: darkslategray;
+  border-bottom: 10px dotted purple;
+  font-size: 2rem;
+}
+
+/* Text styles - Task 2 and 3 */
+h2 {
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+/* Text styles - Task 4 */
+.job-title {
+  color: darkslategray;
+  font-weight: bold;
+}
+
+/* Text styles - Task 5 */
+a {
+  color: green;
+}
+
+/* Text styles - Task 6 and 7 */
+a:hover,
+a:focus {
+  color: darkgreen;
+  text-decoration: none;
+}
