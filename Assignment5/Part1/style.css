@@ -104,4 +104,178 @@ article {
 }
 
 .nav a {
-  display:
+  display: inline-block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+.nav a:focus, .show-hide:focus, input:focus {
+  outline: 3px solid #1a1a1a;
+}
+
+.nav .search {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 2em;
+}
+
+.search input {
+  font-size: 1.6rem;
+  height: 32px;
+}
+
+.search input[type="search"] {
+  flex: 3;
+}
+
+.search input[type="submit"] {
+  flex: 1;
+  margin-left: 1rem;
+  background: #1a1a1a;
+  border: 0;
+  color: white;
+}
+
+/* || main layout */
+
+main {
+  display: flex;
+}
+
+article {
+  flex: 5;
+}
+
+.secondary {
+  flex: 2;
+}
+
+footer {
+  margin-top: 10px;
+  padding: 10px 30px;
+}
+
+/* Table styling */
+
+table {
+  width: 100%;
+  background-color: #dde;
+  border-collapse: collapse;
+}
+
+caption {
+  font-size: 1.6rem;
+  padding: 10px;
+  font-weight: bold;
+  text-align: left;
+}
+
+th, td {
+  padding: 10px;
+}
+
+td, th {
+  text-align: center;
+}
+
+th {
+  border-bottom: 1px solid black;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #def;
+}
+
+/* styling content images and audio */
+
+img, audio {
+  display: block;
+  margin: 0 auto;
+}
+
+audio {
+  width: 500px;
+  max-width: 100%;
+}
+
+details {
+  font-size: 1.6rem;
+  max-width: 700px;
+  margin: 10px auto;
+}
+
+/* Comments styling */
+
+.comments {
+  background-color: #def;
+  padding: 10px;
+}
+
+.show-hide {
+  cursor: pointer;
+  text-align: center;
+  width: 150px;
+  background: #1a1a1a;
+  border: 0;
+  color: white;
+  font-size: 1.6rem;
+  line-height: 32px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.comment-form {
+  margin-bottom: 3rem;
+}
+
+.comment-form .flex-pair {
+  display: flex;
+  padding: 0 3rem 1rem;
+}
+
+.comment-form label {
+  align-self: center;
+  flex: 2;
+  text-align: right;
+}
+
+.comment-form input {
+  margin-left: 1rem;
+  flex: 6;
+}
+
+.comment-form input, .comment-form label {
+  font-size: 1.6rem;
+  line-height: 32px;
+}
+
+.comment-form input[type="submit"] {
+  background: #1a1a1a;
+  border: 0;
+  color: white;
+  width: 30%;
+  display: block;
+  margin: 0 auto;
+}
+
+.comment-container {
+  margin-top: 0;
+}
+
+.comment-container li {
+  list-style-type: none;
+  display: flex;
+}
+
+.comment-container li p:nth-child(1) {
+  flex: 1;
+  font-weight: bold;
+}
+
+.comment-container li p:nth-child(2) {
+  flex: 5;
+}
